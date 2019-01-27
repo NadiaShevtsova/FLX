@@ -1,0 +1,187 @@
+/* line 7, _main.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+}
+
+/* line 14, _main.scss */
+body {
+  background: #ffffff;
+}
+
+/* line 17, _main.scss */
+.main-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+/* line 20, _main.scss */
+.main-wrapper header {
+  position: relative;
+  background: url(../img/header_background_v1.jpg) center center no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+/* line 25, _main.scss */
+.main-wrapper header .top-wrapper {
+  overflow: hidden;
+  padding: 10px;
+}
+/* line 28, _main.scss */
+.main-wrapper header .top-wrapper .logo {
+  float: left;
+}
+/* line 30, _main.scss */
+.main-wrapper header .top-wrapper .logo img {
+  width: 230px;
+  height: 140px;
+}
+/* line 35, _main.scss */
+.main-wrapper header .top-wrapper nav {
+  float: right;
+  padding: 10px;
+}
+/* line 38, _main.scss */
+.main-wrapper header .top-wrapper nav a {
+  padding: 0 100px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 44, _main.scss */
+.main-wrapper header section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 51, _main.scss */
+.main-wrapper header section h1 {
+  padding: 20px 0;
+  color: #fff;
+}
+/* line 55, _main.scss */
+.main-wrapper header section .btn {
+  padding: 10px 50px;
+  background: #01acac;
+}
+/* line 59, _main.scss */
+.main-wrapper header section a {
+  color: #efefef;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 66, _main.scss */
+.main-wrapper main {
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 69, _main.scss */
+.main-wrapper main .toolbar {
+  text-align: right;
+}
+/* line 71, _main.scss */
+.main-wrapper main .toolbar input {
+  margin: 20px 10px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid darkgray;
+}
+/* line 79, _main.scss */
+.main-wrapper main section h1 {
+  text-align: right;
+  text-transform: uppercase;
+}
+/* line 83, _main.scss */
+.main-wrapper main section h4 {
+  text-align: right;
+}
+/* line 86, _main.scss */
+.main-wrapper main section article {
+  background: #efefef;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/* line 92, _main.scss */
+.main-wrapper main section article .post-description {
+  color: #FF0000;
+  font-size: 12px;
+  border-bottom: 1px solid #607d8b;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* line 99, _main.scss */
+.main-wrapper main section article .post {
+  padding: 10px 15px 10px 10px;
+}
+/* line 101, _main.scss */
+.main-wrapper main section article .post h3 {
+  text-transform: uppercase;
+  color: #0097a7;
+}
+/* line 106, _main.scss */
+.main-wrapper main section article .btn {
+  margin: 15px;
+  border: none;
+  float: right;
+  padding: 10px 50px;
+  background: #01acac;
+  color: #efefef;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 116, _main.scss */
+.main-wrapper main section {
+  padding-top: 20px;
+}
+/* line 118, _main.scss */
+.main-wrapper main section img {
+  width: 100%;
+  margin: 20px 0;
+}
+/* line 122, _main.scss */
+.main-wrapper main section form {
+  margin: 20px 0;
+  display: grid;
+  grid-gap: 20px;
+  text-align: right;
+  grid-template-columns: repeat(2, 1fr);
+  color: #0097a7;
+}
+/* line 129, _main.scss */
+.main-wrapper main section form .item-4 {
+  grid-column-start: 2;
+}
+/* line 131, _main.scss */
+.main-wrapper main section form .item-4 .btn-send {
+  margin: 15px 0;
+  border: none;
+  padding: 10px 80px;
+  background: #01acac;
+  color: #efefef;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 139, _main.scss */
+.main-wrapper main section form .item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25px 50px;
+}
+/* line 144, _main.scss */
+.main-wrapper main section form .item-3 {
+  grid-column: span 2;
+  grid-template-rows: 25px 200px;
+}
+/* line 147, _main.scss */
+.main-wrapper main section form .item-3 textarea {
+  height: 200px;
+}

@@ -1,0 +1,159 @@
+@mixin style-for-text($color, $transform, $decoration){
+  color: $color;
+  text-transform: $transform;
+  text-decoration: $decoration;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: $fontFamily;
+  //background: $colorBg;
+}
+
+body{
+  background: $colorBg;
+}
+.main-wrapper{
+  max-width: 1600px;
+  margin: 0 auto;
+  header{
+    position: relative;
+    background: $contentBackground center center no-repeat;
+    background-size: cover;
+    height: 800px;
+    .top-wrapper{
+      overflow: hidden;
+      padding: 10px;
+      .logo{
+        float: left;
+        img{
+          width: 230px;
+          height: 140px;
+        }
+      }
+      nav{
+        float: right;
+        padding: 10px;
+        a{
+          padding: 0 100px;
+          @include style-for-text($colorText, uppercase, none);
+        }
+      }
+    }
+    section{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      @include style-for-text($colorText, uppercase, none);
+      h1{
+        padding: 20px 0;
+        color: $colorText;
+      }
+      .btn{
+        padding: 10px 50px;
+        background: $colorBtnAndText;
+      }
+      a{
+        @include style-for-text($colorArticleBackground, uppercase, none);
+        display: inline-block;
+      }
+    }
+  }
+
+  main{
+    width: 70%;
+    margin: 0 auto;
+    .toolbar{
+      text-align: right;
+      input{
+        margin: 20px 10px;
+        padding: 10px;
+        background: $colorBg;
+        border: 1px solid darkgray;
+      }
+    }
+      section{
+        h1{
+          text-align: right;
+          text-transform: uppercase;
+        }
+        h4{
+          text-align: right;
+        }
+        article{
+          background: $colorArticleBackground;
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          padding: 10px;
+          margin-bottom: 20px;
+          .post-description{
+            color: $colorTextRed;
+            font-size: 12px;
+            border-bottom: 1px solid $colorLine;
+            padding-bottom:10px;
+            margin-bottom: 10px;
+          }
+          .post{
+            padding: 10px 15px 10px 10px;
+            h3{
+              text-transform: uppercase;
+              color:$colorText2;
+            }
+          }
+          .btn{
+            margin: 15px;
+            border: none;
+            float: right;
+            padding: 10px 50px;
+            background: $colorBtnAndText;
+            @include style-for-text($colorArticleBackground, uppercase, none);
+          }
+        }
+      }
+    section{
+      padding-top: 20px;
+      img{
+        width: 100%;
+        margin: 20px 0;
+      }
+      form{
+        margin: 20px 0;
+        display: grid;
+        grid-gap: 20px;
+        text-align: right;
+        grid-template-columns: repeat(2, 1fr);
+        color: $colorText2;
+        .item-4{
+          grid-column-start: 2;
+          .btn-send{
+            margin: 15px 0;
+            border: none;
+            padding: 10px 80px;
+            background: $colorBtnAndText;
+            @include style-for-text($colorArticleBackground, uppercase, none);
+          }
+        }
+        .item{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 25px 50px;
+        }
+        .item-3{
+          grid-column: span 2;
+          grid-template-rows: 25px 200px;
+          textarea{
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
